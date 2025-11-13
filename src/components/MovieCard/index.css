@@ -1,0 +1,50 @@
+.movie-card-item {
+  width: 23%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.movie-card-image {
+  height: 350px;
+  width: 100%;
+  border-radius: 8px;
+}
+.movie-heading-rating-btn-container {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-card-heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.movie-card-rating {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.view-link {
+  text-decoration: none;
+  height: 50px;
+  width: 50%;
+}
+.view-details-btn {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  border-radius: 8px;
+  font-size: 18px;
+}

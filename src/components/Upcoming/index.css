@@ -1,0 +1,38 @@
+.upcoming-main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.upcoming-content-container {
+  background-color: #252625;
+  background-size: cover;
+  width: 100%;
+
+  padding: 30px 100px 30px 100px;
+}
+.upcoming-list-pagination-container {
+  display: flex;
+  flex-direction: column;
+}
+.upcoming-movie-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+.loader-container {
+  background-color: transparent;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}

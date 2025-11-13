@@ -1,0 +1,26 @@
+.pagination-container {
+  height: 100px;
+  width: 200px;
+  background-color: transparent;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-no-btn {
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #f2f2f0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f2f2f0;
+  font-size: 30px;
+}
+
+.page-no-text {
+  color: #f2f2f0;
+}
