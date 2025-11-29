@@ -36,11 +36,6 @@ const SearchQuery = () => (
               <MovieCard key={each.id} movieCardDetails={each} />
             ))}
           </ul>
-          <Pagination
-            totalPages={totalPages}
-            apiCallBack={apiCallBack}
-            pageNo={pageNo}
-          />
         </div>
       )
 
@@ -69,6 +64,11 @@ const SearchQuery = () => (
           <Header />
           <div className="searchquery-content-container">
             {renderSearchQueryRelatedView()}
+            <Pagination
+              totalPages={totalPages}
+              apiCallBack={apiCallBack}
+              pageNo={pageNo}
+            />
           </div>
         </div>
       )

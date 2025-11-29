@@ -25,21 +25,23 @@ class Pagination extends Component {
     const {pageNo} = this.props
     return (
       <div className="pagination-container">
-        <button
-          type="button"
-          className="page-no-btn"
-          onClick={this.onClickPrevBtn}
-        >
-          -
-        </button>
-        <h1 className="page-no-text">{pageNo}</h1>
-        <button
-          type="button"
-          className="page-no-btn"
-          onClick={this.onClickNextBtn}
-        >
-          +
-        </button>
+        <div className="page-btn-container">
+          <button
+            type="button"
+            className="page-no-btn"
+            onClick={this.onClickPrevBtn}
+          >
+            Prev
+          </button>
+          <h1 className="page-no-text">{pageNo}</h1>
+          <button
+            type="button"
+            className="page-no-btn"
+            onClick={this.onClickNextBtn}
+          >
+            Next
+          </button>
+        </div>
       </div>
     )
   }

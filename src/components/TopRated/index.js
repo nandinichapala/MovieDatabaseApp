@@ -46,7 +46,7 @@ class TopRated extends Component {
   )
 
   renderPopularContentView = () => {
-    const {popularContentList, totalPages, pageNo} = this.state
+    const {popularContentList} = this.state
     return (
       <div className="toprated-list-pagination-container">
         <ul className="toprated-movie-list">
@@ -54,17 +54,12 @@ class TopRated extends Component {
             <MovieCard key={each.id} movieCardDetails={each} />
           ))}
         </ul>
-        <Pagination
-          totalPages={totalPages}
-          apiCallBack={this.apiCallBack}
-          pageNo={pageNo}
-        />
       </div>
     )
   }
 
   render() {
-    const {isLoading} = this.state
+    const {isLoading, totalPages, pageNo} = this.state
 
     return (
       <div className="toprated-main-container">
@@ -74,6 +69,11 @@ class TopRated extends Component {
             ? this.renderLoadingView()
             : this.renderPopularContentView()}
         </div>
+        <Pagination
+          totalPages={totalPages}
+          apiCallBack={this.apiCallBack}
+          pageNo={pageNo}
+        />
       </div>
     )
   }

@@ -47,7 +47,7 @@ class Upcoming extends Component {
   )
 
   renderPopularContentView = () => {
-    const {popularContentList, totalPages, pageNo} = this.state
+    const {popularContentList} = this.state
     return (
       <div className="upcoming-list-pagination-container">
         <ul className="upcoming-movie-list">
@@ -55,17 +55,12 @@ class Upcoming extends Component {
             <MovieCard key={each.id} movieCardDetails={each} />
           ))}
         </ul>
-        <Pagination
-          totalPages={totalPages}
-          apiCallBack={this.apiCallBack}
-          pageNo={pageNo}
-        />
       </div>
     )
   }
 
   render() {
-    const {isLoading} = this.state
+    const {isLoading, totalPages, pageNo} = this.state
 
     return (
       <div className="upcoming-main-container">
@@ -75,6 +70,11 @@ class Upcoming extends Component {
             ? this.renderLoadingView()
             : this.renderPopularContentView()}
         </div>
+        <Pagination
+          totalPages={totalPages}
+          apiCallBack={this.apiCallBack}
+          pageNo={pageNo}
+        />
       </div>
     )
   }
